@@ -1,0 +1,285 @@
+.hero, .plastic, .hack, .make-cleaner // 
+  display: none
+
+
+/* адаптированы */
+//.check, .rules, .garbage, .water, .sort
+//display: none
+
+
+/* settings */
+@media screen and ( max-width: 1350px )
+  .container
+    width: 100%
+  .arrow
+    height: 100%
+    &-wrapper 
+      height: 164px
+      bottom: -82px
+
+@media screen and ( max-width: 1350px )
+  .arrow
+    &-wrapper 
+      height: 156px
+      bottom: -78px
+
+
+/* rules */
+@media screen and ( max-width: 1700px )
+  .rules 
+    &__container
+    &-cards
+      max-width: 80%
+      align-items: flex-start
+    &-card
+      &__img 
+        max-width: 200px
+        height: 196px
+      &__title 
+        font-size: 22px
+        line-height: 28px
+        max-width: 145px
+      &__text
+        font-size: 22px
+        line-height: 28px
+
+@media screen and ( max-width: 1350px )
+  .rules
+    &__container 
+      width: 100%
+    &-cards 
+      max-width: 932px
+    &-card 
+      &__img 
+        max-width: 188px
+        height: 185px
+      &__title 
+        font-size: 18px
+        line-height: 22px
+        max-width: 117px
+        &-big 
+          max-width: 100%
+      &__text
+        font-size: 18px
+        line-height: 22px
+        max-width: 100%
+
+@media screen and ( max-width: 1080px )
+  .rules
+    &-cards 
+      max-width: 1080px
+      flex-wrap: wrap
+    &-card 
+      flex-basis: 100%
+      &:not(:last-of-type)
+        margin-bottom: 120px
+      &__img 
+        width: 285px
+        height: 280px
+      &__content
+        max-width: 504px
+        margin-left: auto
+        margin-right: auto
+      &__title 
+        font-size: 36px
+        line-height: 44px
+        max-width: 225px
+      &__text 
+        font-size: 36px
+        line-height: 44px
+
+@media screen and ( max-width: 576px )
+  .rules
+    &-card 
+      &__img 
+        width: 200px
+        height: 196px
+      &__content
+        max-width: 80%
+        margin-left: auto
+        margin-right: auto
+      &__title 
+        font-size: 25px
+        line-height: 38px
+        max-width: 225px
+      &__text 
+        font-size: 25px
+        line-height: 38px
+
+
+/* garbage */
+@media screen and ( max-width: 1350px )
+  .garbage 
+    &-cards 
+      max-width: 942px
+    &-card 
+      &__img 
+        width: 154px
+        height: 334px
+
+@media screen and ( max-width: 1080px )
+  .garbage
+    &-cards 
+      max-width: 909px
+      flex-wrap: wrap
+      justify-content: space-around
+    &-card 
+      flex: 1
+      flex-basis: 31%
+      margin-bottom: 26px
+      &__img 
+        width: 261px
+        height: 565px
+      &__text 
+        font-size: 36px
+        line-height: 44px
+        max-width: none
+
+@media screen and ( max-width: 908px )
+  .garbage
+    &-cards 
+      width: 100%
+    &-card 
+      flex-basis: 100%
+      &__text
+        &-big
+          margin-bottom: 20px
+
+@media screen and ( max-width: 576px )
+  .garbage
+    &-card
+      &__img
+        width: 200px
+        height: 450px
+
+
+/* check */
+@media screen and ( max-width: 1350px )
+  .check
+    &-cards 
+      max-width: 940px
+    &-card 
+      margin-bottom: 34px
+      &__img 
+        max-width: 180px
+        height: 130px
+      &__text 
+        font-size: 18px
+        line-height: 22px
+        max-width: 263px
+
+@media screen and ( max-width: 908px )
+  .check
+    &-cards 
+      flex-wrap: wrap
+      justify-content: center
+    &-card 
+      flex-basis: 100%
+
+
+/* water */
+@media screen and ( max-width: 1350px )
+  .water 
+    &-content
+      max-width: 643px
+      justify-content: center
+    &-description
+      max-width: 426px
+      &__block
+        max-width: 322px
+      &__text 
+        font-size: 18px
+        line-height: 22px
+      &__num 
+        font-size: 289px
+    &-img 
+      width: 192px
+      height: 538px
+    &__section-title
+      font-size: 36px
+      line-height: 44px
+
+@media screen and ( max-width: 640px )
+  .water 
+    &-content 
+      flex-wrap: wrap
+      max-width: 80%
+    &-img
+      flex-basis: 100%
+      order: 1
+    &-description
+      flex-wrap: wrap
+      justify-content: center
+      width: 100%
+      &__num
+        width: 100%
+        text-align: center
+        line-height: 289px
+      &__block 
+        max-width: 90%
+        
+
+/* sort */
+@media screen and ( max-width: 1700px )
+  .sort
+    &__section-title
+      font-size: 36px
+      line-height: 44px
+    &-description 
+      &__text 
+        font-size: 18px
+        line-height: 22px
+        max-width: 293px
+
+@media screen and ( max-width: 1450px )
+  .sort
+    &-description
+      margin-left: 0
+      left: 5%
+  
+@media screen and ( max-width: 1080px )
+  .sort 
+    &__section-title
+      font-size: 64px
+      line-height: 78px
+    &-description 
+      width: 80%
+      margin-top: 122px
+      left: 50%
+      transform: translateX(-50%)
+      &__text 
+        max-width: 594px
+        font-size: 36px
+        line-height: 44px
+
+@media screen and ( max-width: 934px )
+  .sort 
+    &__section-title
+      font-size: 24px
+    &-description 
+      margin-top: 0
+      top: 7%
+      &__text 
+        font-size: 24px
+        line-height: 34px
+
+@media screen and ( max-width: 623px )
+  .sort 
+    &__section-title
+      line-height: 25px
+    &-description 
+      flex-wrap: wrap
+      top: 13%
+      left: 39%
+      width: 67%
+      &__text 
+        font-size: 16px
+        line-height: 24px
+        width: 100%
+      &__block  
+        margin-left: 0
+        margin-top: 15px
+      &__num 
+        width: 100%
+        font-size: 160px
+        line-height: 125px

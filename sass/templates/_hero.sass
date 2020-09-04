@@ -1,0 +1,121 @@
+.hero
+  //height: 620px
+  position: relative
+  &-bg 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  &__container
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    //background: $color-hero url(../img/hero-bg.png) center no-repeat
+    background-size: cover
+    //max-width: 1205px
+    height: 963px
+  &-content 
+    position: relative
+    max-height: 447px
+    height: 100%
+    max-width: 928px
+    width: 100%
+    margin: auto
+  &__section-title 
+    position: relative
+    max-width: 513px
+    font-size: 48px
+    line-height: 59px
+    text-align: center
+    text-transform: uppercase
+    color: $color-light
+    margin: auto
+    margin-top: 106px
+
+  &-sun 
+    position: absolute
+    top: 13%
+    left: 28%
+    max-width: 107px
+    max-height: 177px
+    z-index: 3
+  &-mountain 
+    position: absolute
+    width: 100%
+    z-index: 1
+  &-palmaes
+    position: absolute
+    width: 100%
+    z-index: 2
+  &-lake 
+    position: absolute
+    width: 100%
+    z-index: 3
+  &-first
+    &-plan 
+      position: absolute
+      bottom: -14px
+      left: 50%
+      transform: translateX(-50%)
+      width: 100%
+      max-width: 100%
+      max-height: 620px
+      z-index: 4
+
+
+  &-deer
+    position: absolute
+    bottom: 15px
+    max-width: 248px
+    max-height: 277px
+    z-index: 10 
+  &-rabbit
+    position: absolute
+    bottom: 15px
+    left: 50%
+    transform: translateX(-100%)
+    max-width: 111px
+    max-height: 100px
+    z-index: 10 
+  &-moose
+    position: absolute
+    right: 11%
+    z-index: 10
+    bottom: 0
+    max-width: 281px
+    height: 373px
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+  &-bird 
+    position: absolute
+    top: 10%
+    right: 6%
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+    max-width: 65px
+    max-height: 44px
+    z-index: 11
+
+
+
+  &__line 
+    position: absolute
+    bottom: -41px
+    height: 83px
+    width: 51.4%
+    background-color: $color-light
+    &-left
+      left: -8px
+      margin-right: auto
+      transform: rotate(7.8deg)
+    &-right
+      right: -8px
+      margin-left: auto
+      transform: rotate(-7.8deg)
+
+
+.container
+  &__block
+    position: relative
+    max-width: 1205px
+

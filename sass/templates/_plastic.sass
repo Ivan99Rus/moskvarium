@@ -1,0 +1,87 @@
+.plastic 
+  //height: 620px
+  position: relative
+  &-bg 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  &__container
+    position: relative
+    background: $color-hero url(../img/Back_b.png) center no-repeat
+    background-size: cover
+    height: 1080px
+  &-trash 
+    position: absolute
+    max-width: 758px
+    max-height: 388px
+    z-index: 10
+    right: 10%
+    bottom: -40px
+
+  &-sun 
+    position: absolute
+    top: 7%
+    right: 28%
+    max-width: 107px
+    max-height: 177px
+    z-index: 3
+  &-mouse
+    position: absolute
+    bottom: 0
+    left: 0
+    max-width: 115px
+    max-height: 109px
+    z-index: 10
+
+
+  &-block 
+    display: flex
+    align-items: center
+    margin-left: 287px
+    padding-top: 80px
+    &__text 
+      z-index: 20
+      max-width: 302px
+      margin-left: 25px
+      &-reg 
+        font-size: 24px
+        line-height: 26px
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15)
+      &-bold 
+        @include baseFontBold
+        font-size: 24px
+        line-height: 26px
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15)
+
+  &-ellipce
+    position: relative
+    width: 412px
+    height: 412px
+    border-radius: 50%
+    background-color: $color-secondary
+    z-index: 15
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    &__title
+      font-size: 110px
+      line-height: 120px
+      @include baseFontBold
+      text-transform: uppercase
+      text-align: center
+    &__text
+      display: block
+      @include baseFontBold
+      font-size: 22px
+      line-height: 37px
+      text-transform: uppercase
+      text-align: center
+      max-width: 243px
+      margin-top: 13px
+    &__arrow
+      position: absolute
+      left: 29%
+      top: 80%

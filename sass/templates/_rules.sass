@@ -1,0 +1,42 @@
+.rules
+  position: relative
+  &__container 
+    padding: 100px 0 50px
+    background: rgba(81, 188, 255, 0.15)  
+  &-cards 
+    padding: 63px 0
+    max-width: 1496px //932px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: auto
+  &-card 
+    color: $color-base
+    flex-basis: 30%
+    &__img 
+      display: block
+      max-width: 302px //173px
+      //height: 175px
+      margin-bottom: 42px
+      margin: auto
+    &__content
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      margin-top: 42px
+    &__title 
+      max-width: 227px 
+      margin-bottom: 5px
+      @include baseFontBold
+      font-size: 36px
+      line-height: 44px
+      color: $color-base
+      &-big
+        max-width: 488px !important
+    &__text 
+      font-size: 36px
+      line-height: 44px
+      max-width: 494px
+
